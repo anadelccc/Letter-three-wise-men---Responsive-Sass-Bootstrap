@@ -1,0 +1,339 @@
+/* VARIABLES */
+/* MIXINS Y FUNCIONES */
+/* VERSION MOVIL */
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  body .logo {
+    width: 66% !important;
+  }
+  body .collapse {
+    font-size: larger;
+    padding: 30px;
+  }
+  body .wrap {
+    flex-direction: column;
+  }
+  body .wrap .izquierda {
+    width: 100% !important;
+  }
+  body .wrap .izquierda .estrellitas {
+    width: 70%;
+    display: flex !important;
+    margin-top: 1px !important;
+    margin-left: 3rem;
+  }
+  body .wrap .izquierda .estrellitas .estrella {
+    font-size: 150% !important;
+    margin: 1px !important;
+  }
+  body .wrap .izquierda .form {
+    width: 100%;
+  }
+  body .wrap .izquierda .form label {
+    color: white;
+    font-weight: 500;
+    font-size: x-large;
+    margin: 10px;
+    padding: 10px;
+  }
+  body .wrap .izquierda .form input {
+    width: 70% !important;
+    color: #2c2936;
+    font-weight: 500;
+    font-size: x-large;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  body .wrap .izquierda .form .button1 {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #D69A26;
+    color: white;
+    font-size: x-large !important;
+    margin-bottom: 4rem;
+  }
+  body .wrap .izquierda .form .button1:hover {
+    background-color: #2c2936;
+    color: white;
+  }
+  body .wrap .derecha {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  body .wrap .derecha .reyes {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  body .wrap .derecha .reyes .rey {
+    width: 25% !important;
+    height: 25% !important;
+    margin: 10px;
+  }
+  body .wrap .derecha .primary-text {
+    text-align: center;
+    align-items: center;
+  }
+  body .wrap .derecha .cartaytexto {
+    display: block !important;
+  }
+  body .wrap .derecha .cartaytexto p {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  body .wrap .derecha .cartaytexto .carta {
+    width: 70%;
+    height: 70%;
+    scale: 250%;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 7rem;
+  }
+  body .footer1 {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: x-large;
+    color: #2c2936;
+  }
+}
+/* VERSION TABLET/*  */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  body .logo {
+    width: 66% !important;
+  }
+  body .collapse {
+    font-size: larger;
+    padding: 30px;
+  }
+  body .wrap {
+    flex-direction: column;
+  }
+  body .wrap .izquierda {
+    width: 100% !important;
+  }
+  body .wrap .izquierda .estrellitas {
+    width: 70%;
+    display: flex !important;
+    margin-top: 1px !important;
+    margin-left: 7rem;
+  }
+  body .wrap .izquierda .estrellitas .estrella {
+    font-size: 150% !important;
+    margin: 1px !important;
+  }
+  body .wrap .izquierda .form {
+    width: 100%;
+  }
+  body .wrap .izquierda .form label {
+    color: white;
+    font-weight: 500;
+    font-size: x-large;
+    margin: 10px;
+    padding: 10px;
+  }
+  body .wrap .izquierda .form input {
+    width: 70% !important;
+    color: #2c2936;
+    font-weight: 500;
+    font-size: x-large;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  body .wrap .izquierda .form .button1 {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #D69A26;
+    color: white;
+    font-size: x-large !important;
+    margin-bottom: 4rem;
+  }
+  body .wrap .izquierda .form .button1:hover {
+    background-color: #2c2936;
+    color: white;
+  }
+  body .wrap .derecha {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  body .wrap .derecha .reyes {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  body .wrap .derecha .reyes .rey {
+    width: 30% !important;
+    height: 30% !important;
+    margin: 10px;
+  }
+  body .wrap .derecha .primary-text {
+    text-align: center;
+    align-items: center;
+  }
+  body .wrap .derecha .cartaytexto {
+    display: block !important;
+  }
+  body .wrap .derecha .cartaytexto p {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  body .wrap .derecha .cartaytexto .carta {
+    width: 70%;
+    height: 70%;
+    scale: 250%;
+    margin: 10px;
+    margin-top: 8rem;
+    margin-bottom: 14rem;
+  }
+  body .footer1 {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: x-large;
+    color: #2c2936;
+  }
+}
+/* VERSION DESKTOP */
+body {
+  background: linear-gradient(180deg, rgb(9, 44, 121) 23%, rgb(45, 229, 253) 100%);
+  font-family: Barlow;
+  overflow-x: hidden;
+}
+body header {
+  padding-bottom: 220px;
+}
+body header nav {
+  font-family: sans-serif;
+  background: url(img/NUBE-REPE.png) repeat-x left top;
+  min-height: 160px;
+  width: 100%;
+  font-size: large;
+}
+body header nav .logo {
+  width: 20%;
+  margin-left: 1%;
+}
+body header nav .nav-item {
+  margin-right: 1rem;
+  font-weight: bolder;
+}
+body header nav .nav-item:hover {
+  background-color: #D69A26;
+  border-radius: 5px;
+}
+body header nav .collapse {
+  background-color: rgba(255, 255, 255, 0.61);
+  padding: 2px;
+  text-align: center;
+}
+body main .wrap {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+body main .wrap .izquierda {
+  text-align: center;
+  align-items: center;
+  width: 40%;
+}
+body main .wrap .izquierda .estrellitas {
+  display: block;
+  justify-content: space-between;
+  margin-top: 2rem;
+  color: #D69A26;
+  font-weight: bolder;
+}
+body main .wrap .izquierda .estrellitas .estrella {
+  margin: 2rem;
+  font-size: 150%;
+}
+body main .wrap .izquierda .form label {
+  color: white;
+  font-weight: 500;
+  margin: 10px;
+  padding: 10px;
+}
+body main .wrap .izquierda .form input {
+  width: 50%;
+  color: #2c2936;
+  font-weight: 500;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+body main .wrap .izquierda .form .button1 {
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #D69A26;
+  color: white;
+  font-size: large;
+}
+body main .wrap .izquierda .form .button1:hover {
+  background-color: #2c2936;
+  color: white;
+}
+body main .wrap .derecha {
+  width: 60%;
+  text-align: center;
+  align-items: center;
+}
+body main .wrap .derecha .rey {
+  width: 10%;
+  height: 10%;
+  margin: 50px;
+}
+body main .wrap .derecha .cartaytexto {
+  display: flex;
+  font-size: large;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+body main .wrap .derecha .cartaytexto .carta {
+  width: 60%;
+  height: 60%;
+  margin-right: 3rem;
+}
+body main .wrap .derecha .primary-text {
+  font-size: xx-large;
+  color: white;
+}
+body main .wrap .derecha .yellow {
+  color: #D69A26;
+  font-weight: bolder;
+}
+body .footer1 {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+  font-weight: 500;
+  color: #2c2936;
+}
+body .footer {
+  background-color: rgba(255, 255, 255, 0.5);
+}/*# sourceMappingURL=reyes.css.map */

@@ -1,0 +1,372 @@
+/* VARIABLES */
+
+$primary-color: white;
+$secondary-color: #D69A26;
+$third-color: #2c2936;
+$comun-font-size: large;
+$font-weights: (
+    "bold": bolder, 
+    "regular": 400, 
+    "medium":500
+);
+
+/* MIXINS Y FUNCIONES */
+
+@mixin media-mob{
+    @media screen and (max-width:600px){
+        @content;
+    }
+}
+
+@mixin media-tabl{
+    @media screen and (min-width:600px) and (max-width:1200px){
+        @content;
+    }
+}
+
+@mixin media-desk{
+    @media screen and (min-width:1200px){
+        @content;
+    }
+}
+
+@function weight ($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
+@mixin colocar ($donde) {
+    text-align: $donde;
+    align-items: $donde;
+}
+
+@mixin aire ($tanto){
+    margin: $tanto;
+    padding: $tanto;
+}
+
+/* VERSION MOVIL */
+
+@include media-mob{
+    body{
+    overflow-x: hidden;
+    width: 100%;
+        .logo{
+        width: 66%!important;
+        }
+        .collapse{
+            font-size: larger;
+            padding: 30px;
+        }
+        .wrap{
+        flex-direction: column;
+            .izquierda{
+                width: 100%!important;
+                .estrellitas{
+                    width: 70%;
+                    display: flex!important;
+                    margin-top: 1px!important;
+                    margin-left: 3rem;
+                   .estrella{
+                        font-size: 150%!important;
+                        margin: 1px !important;
+                   }
+                }
+                .form{
+                    width: 100%;
+                    label{
+                    color: $primary-color;
+                    font-weight: weight(medium);
+                    font-size: x-large;
+                    @include aire(10px);
+                    }
+                    input{
+                    width: 70% !important;
+                    color: $third-color;
+                    font-weight: weight(medium);
+                    font-size: x-large;
+                    @include aire(10px);
+                    @include colocar(center);
+                    }
+                    .button1{
+                        border: none;
+                        border-radius: 10px;
+                        padding: 15px;
+                        background-color: $secondary-color;
+                        color: $primary-color;
+                        font-size: x-large!important;
+                        margin-bottom: 4rem;
+                        &:hover{
+                            background-color: $third-color;
+                            color: $primary-color;
+                        }
+                    }        
+                }
+            }   
+            .derecha{
+                width: 100%;
+                @include colocar(center);
+                .reyes{
+                    display: flex;
+                    @include colocar(center);
+                    .rey{
+                        width: 25%!important;
+                        height: 25%!important;
+                        margin: 10px;
+                    }
+                }
+                .primary-text{
+                   @include colocar(center);
+                }
+                .cartaytexto{
+                    display: block!important;
+                    p{
+                    color: $primary-color;
+                    font-size:x-large;
+                    @include colocar(center);
+                    margin-bottom: 4rem;
+                    }
+                    .carta{
+                        width: 70%;
+                        height:70%;
+                        scale: 250%;
+                        margin-top: 4rem;
+                        margin-right: 2rem;
+                        margin-bottom: 7rem;
+                    }
+                }
+
+            }
+        }
+        .footer1{
+            @include colocar(center);
+            margin-bottom: 50px;
+            font-weight: weight(medium);
+            font-size: x-large;
+            color: $third-color;
+        } 
+    }    
+}
+
+/* VERSION TABLET/*  */
+
+@include media-tabl{
+    body{
+    overflow-x: hidden;
+    width: 100%;
+        .logo{
+        width: 66%!important;
+        }
+        .collapse{
+            font-size: larger;
+            padding: 30px;
+        }
+        .wrap{
+        flex-direction: column;
+            .izquierda{
+                width: 100%!important;
+                .estrellitas{
+                    width: 70%;
+                    display: flex!important;
+                    margin-top: 1px!important;
+                    margin-left: 7rem;
+                   .estrella{
+                        font-size: 150%!important;
+                        margin: 1px !important;
+                   }
+                }
+                .form{
+                    width: 100%;
+                    label{
+                    color: $primary-color;
+                    font-weight: weight(medium);
+                    font-size: x-large;
+                    @include aire(10px);
+                    }
+                    input{
+                    width: 70% !important;
+                    color: $third-color;
+                    font-weight: weight(medium);
+                    font-size: x-large;
+                    @include aire(10px);
+                    @include colocar(center);
+                    }
+                    .button1{
+                        border: none;
+                        border-radius: 10px;
+                        padding: 15px;
+                        background-color: $secondary-color;
+                        color: $primary-color;
+                        font-size: x-large!important;
+                        margin-bottom: 4rem;
+                        &:hover{
+                            background-color: $third-color;
+                            color: $primary-color;
+                        }
+                    }        
+                }
+            }   
+            .derecha{
+                width: 100%;
+                @include colocar(center);
+                .reyes{
+                    display: flex;
+                    @include colocar(center);
+                    .rey{
+                        width: 30%!important;
+                        height: 30%!important;
+                        margin: 10px;
+                    }
+                }
+                .primary-text{
+                   @include colocar(center);
+                }
+                .cartaytexto{
+                    display: block!important;
+                    p{
+                    color: $primary-color;
+                    font-size:x-large;
+                    @include colocar(center);
+                    margin-bottom: 4rem;
+                    }
+                    .carta{
+                        width: 70%;
+                        height:70%;
+                        scale: 250%;
+                        margin: 10px;
+                        margin-top: 8rem;
+                        margin-bottom: 14rem;
+                    }
+                }
+
+            }
+        }
+        .footer1{
+            @include colocar(center);
+            margin-bottom: 50px;
+            font-weight: weight(medium);
+            font-size: x-large;
+            color: $third-color;
+        } 
+    }    
+}
+
+/* VERSION DESKTOP */
+
+body {
+background: linear-gradient(180deg, rgb(9, 44, 121) 23%, rgb(45, 229, 253) 100%); 
+font-family: Barlow;
+overflow-x: hidden;
+    header{
+    padding-bottom: 220px;
+        nav {
+            font-family: sans-serif;
+            background: url(img/NUBE-REPE.png) repeat-x left top;
+            min-height: 160px;
+            width: 100%;
+            font-size: $comun-font-size;
+            .logo{
+                width:20%;
+                margin-left: 1%;
+            }
+            .nav-item{
+                margin-right: 1rem;
+                font-weight: weight(bold);
+                &:hover{
+                    background-color: $secondary-color;
+                    border-radius: 5px;
+                }
+            }
+            .collapse{
+                background-color: rgba(255, 255, 255, 0.61);
+                padding: 2px;
+                text-align: center;
+            }
+        }
+    }
+    main{
+        .wrap{
+        display: flex;
+        @include colocar(center);
+            .izquierda{
+            @include colocar(center);
+            width: 40%;
+                .estrellitas{
+                    display: block;
+                    justify-content: space-between;
+                    margin-top: 2rem;
+                    color: $secondary-color;
+                    font-weight: weight(bold);
+                    .estrella{
+                        margin: 2rem;
+                        font-size: 150%;
+                    }
+                }
+                .form{
+                    label{
+                    color: $primary-color;
+                    font-weight: weight(medium);
+                    @include aire(10px);
+                    }
+                    input{
+                    width: 50%;
+                    color: $third-color;
+                    font-weight: weight(medium);
+                    @include aire(10px);
+                    @include colocar(center);
+                    }
+                    .button1{
+                        border: none;
+                        border-radius: 10px;
+                        padding: 15px;
+                        background-color: $secondary-color;
+                        color: $primary-color;
+                        font-size: $comun-font-size;
+                        &:hover{
+                            background-color: $third-color;
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+            .derecha{
+            width: 60%;
+            @include colocar(center);
+                .rey{
+                    width: 10%;
+                    height: 10%;
+                    margin: 50px;
+                }
+                .cartaytexto{
+                    display: flex;
+                    font-size:$comun-font-size;
+                    color: $primary-color;
+                    @include colocar(center);
+                    .carta{
+                        width: 60%;
+                        height:60%;
+                        margin-right: 3rem;
+                    }
+                }
+                .primary-text{
+                    font-size:xx-large;
+                    color: $primary-color;
+                }
+                .yellow{
+                    color: $secondary-color;
+                    font-weight: weight(bold);
+                }
+            }
+        }  
+    }
+    .footer1{
+        @include colocar(center);
+        margin-bottom: 50px;
+        font-weight: weight(medium);
+        color: $third-color;
+    }
+    .footer{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+
